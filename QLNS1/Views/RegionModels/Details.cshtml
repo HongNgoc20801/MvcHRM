@@ -1,0 +1,66 @@
+﻿@model QLNS1.Models.RegionModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>RegionModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.RegionName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RegionName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsActive)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsActive)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateCreated)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateCreated)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserCreate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserCreate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateLastUpdate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateLastUpdate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserLastUpdate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserLastUpdate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.RegionID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
